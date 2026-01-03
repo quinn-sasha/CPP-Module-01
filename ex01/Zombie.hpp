@@ -1,5 +1,5 @@
-#ifndef EX00_ZOMBIE_HPP_
-#define EX00_ZOMBIE_HPP_
+#ifndef EX01_ZOMBIE_HPP_
+#define EX01_ZOMBIE_HPP_
 
 #include <string>
 
@@ -18,4 +18,4 @@ public:
 // utilities
 Zombie* zombieHorde(int n, std::string name);
 
-#endif // !EX00_ZOMBIE_HPP_
+#endif // !EX01_ZOMBIE_HPP_
