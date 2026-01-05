@@ -13,4 +13,4 @@ public:
   void complain(std::string level);
 };
 
-#endif // !EX06_HARL_HPP_
+#endif  // EX06_HARL_HPP_

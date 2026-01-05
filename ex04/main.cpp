@@ -25,7 +25,7 @@ std::string replace(const std::string& line, const std::string& target,
     left = found + target.length();
   }
 }
-} // namespace
+}  // namespace
 
 int main(int argc, char* argv[]) {
   if (argc != 4) {
@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
   }
   std::string out_filename = argv[1];
   out_filename.append(".replace");
-  std::ofstream outfile(out_filename, std::ios::out | std::ios::trunc);
+  std::ofstream outfile(out_filename.c_str(), std::ios::out | std::ios::trunc);
   if (!outfile.is_open()) {
     std::cerr << "File not found" << std::endl;
     return 1;
@@ -50,11 +50,7 @@ int main(int argc, char* argv[]) {
   std::string line;
   const std::string target = argv[2];
   const std::string replacement = argv[3];
-  while (true) {
-    std::getline(infile, line);
-    if (infile.eof()) {
-      return 0;
-    }
+  while (std::getline(infile, line)) {
     std::string replaced = replace(line, target, replacement);
     outfile << replaced << std::endl;
   }

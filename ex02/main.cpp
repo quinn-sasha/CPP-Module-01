@@ -11,6 +11,6 @@ int main() {
   std::cout << "Memory address held by stringREF: " << &stringREF << std::endl;
 
   std::cout << "Value of string: " << str << std::endl;
-  std::cout << "Value pointed by stringPTR" << *stringPTR << std::endl;
-  std::cout << "Value pointed by stringREF" << stringREF << std::endl;
+  std::cout << "Value pointed by stringPTR: " << *stringPTR << std::endl;
+  std::cout << "Value pointed by stringREF: " << stringREF << std::endl;
 }

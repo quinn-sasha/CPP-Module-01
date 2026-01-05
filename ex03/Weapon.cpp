@@ -1,5 +1,5 @@
-#include "Weapon.hpp"
 #include <string>
+#include "Weapon.hpp"
 
 Weapon::Weapon(std::string type) : type(type) {}
 

@@ -9,8 +9,8 @@ class Harl {
   void warning();
   void error();
 
-public:
+ public:
   void complain(std::string level);
 };
 
-#endif // !EX05_HARL_HPP_
+#endif  // EX05_HARL_HPP_

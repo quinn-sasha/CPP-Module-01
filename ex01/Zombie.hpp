@@ -6,7 +6,7 @@
 class Zombie {
   std::string name;
 
-public:
+ public:
   Zombie(std::string name);
   Zombie();
   ~Zombie();
@@ -18,4 +18,4 @@ public:
 // utilities
 Zombie* zombieHorde(int n, std::string name);
 
-#endif // !EX01_ZOMBIE_HPP_
+#endif  // EX01_ZOMBIE_HPP_

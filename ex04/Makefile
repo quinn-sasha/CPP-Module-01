@@ -23,7 +23,7 @@ fclean: clean
 	$(RM) $(TARGET)
 
 test_memory_leak: $(TARGET)
-	valgrind --leak-check=full --show-leak-kinds=reachable --track-origins=yes ./$(TARGET)
+	valgrind --leak-check=full --show-leak-kinds=reachable --track-origins=yes ./$(TARGET) hello.txt Hell Dell
 
 re: fclean all
 

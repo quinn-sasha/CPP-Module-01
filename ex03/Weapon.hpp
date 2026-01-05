@@ -6,11 +6,11 @@
 class Weapon {
   std::string type;
 
-public:
+ public:
   Weapon(std::string type);
 
   const std::string& getType() const;
   void setType(std::string type);
 };
 
-#endif // !EX03_WEAPON_HPP_
+#endif  // EX03_WEAPON_HPP_
